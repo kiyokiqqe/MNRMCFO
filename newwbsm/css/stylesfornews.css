@@ -1,0 +1,36 @@
+/* Стилі для блоку "Новини" */
+.news {
+    background-color: #FFFFFF;/*#f9f9f9*/
+    padding: 50px 1px;
+
+}
+
+.news h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.news-items {
+    display: flex;
+    flex-wrap: wrap; /* flex-wrap: wrap;перенесення карток на новий ряд, якщо вони не поміщаються в один ряд */
+    justify-content: space-between;
+}
+
+.news-item {
+    width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-bottom: 30px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h3 {
+    color: #732090;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    color: #666;
+}

@@ -1,0 +1,29 @@
+/* для поля введення коментарів */
+#commentForm textarea {
+    width: 300px;
+    height: 100px; 
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/* для кнопки відправки коментарів */
+#commentForm button[type="submit"] {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#commentForm button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/*відображення коментарів */
+.comment {
+    margin-bottom: 10px;
+}
