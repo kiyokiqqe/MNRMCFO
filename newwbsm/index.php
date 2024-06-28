@@ -1,14 +1,20 @@
+<?php
+session_start();
+
+if (isset($_SESSION['user'])) {
+    header("Location: welcome.php");
+    exit();
+}
+?>
 <html>
 <head>
     <meta charset="UTF-8">
     <link rel='stylesheet' type="text/css" href='css/styles_i_.css'>
     <link rel="stylesheet" type="text/css" href="css/stylesfornews.css">
-    <link rel="stylesheet" type="text/css" href="css/stylesfortestimonials.css">
     <link rel="stylesheet" type="text/css" href="css/stylesforhistory.css">
     <link rel="stylesheet" type="text/css" href="css/stylesforcard.css">
     <link rel="stylesheet" type="text/css" href="css/stylesforregandlog.css">
-    <link rel="stylesheet" type="text/css" href="stylesforcoment.css">
-    
+    <link rel="stylesheet" type="text/css" href="css/stylesforcoment.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +46,9 @@
             <div class='phone'>
                 <div class='phone-holder'>
                     <div class='phone-img'><img src="img/phone.png" alt=""></div>
-                        <div class='number'>  <a class='num' href='https://www.instagram.com/qw_of_xxe/'>+380-984-557-395</a></div>
+                    <div class='number'>  
+                        <a class='num' href='https://www.instagram.com/qw_of_xxe/'>+380-984-557-395</a>
+                    </div>
                 </div>
 
                 <div class='phone-text'>Зв'яжіться для консультації</div>
@@ -58,7 +66,9 @@
 
                 <div class='header-suptitle'>здоров'я найцінніше</div>
 
-                <div class='header-bth'><a href='#' class='header-button' id='loginButton'>Увійти</a></div>
+                <div class='header-bth'>
+                    <a href='personal_cabinet.php' class='header-button' id='header-button-pos'>Особистий кабінет</a>
+                </div>
 
             </div>
         </div>
@@ -151,29 +161,29 @@
     </div>
 </div>
 
-<form id="registerForm" class="history-form" action="register.php" method="post">
+<!-- <form id="registerForm" class="history-form" action="register.php" method="post">
         <input type="text" placeholder="login" name="login">
         <input type="text" placeholder="password" name="pass">
         <input type="text" placeholder="repeat password" name="repeatpass">
         <input type="text" placeholder="email" name="email">
         <button type="submit">Реєстрація</button>
-    </form>
+</form>
 
 <form id="loginForm" class="history-form" action="login.php" method="post">
         <input type="text" placeholder="login" name="login">
         <input type="text" placeholder="password" name="pass">
         <button type="submit">Вхід</button>
 
-    </form>
+</form> -->
     
-<script>
+<!-- <script>
 
     $(document).ready(function(){
     // приховати форми при завантаженні ст
     $('.history-form').hide();
 
     //перевірка події кліку на кнопці "Увійти"
-    $('#loginButton').click(function(){
+    $('#header-button-pos').click(function(){
         //чи вже видима форма
         if($('.history-form').is(':visible')){
             //так, то приховати її
@@ -185,9 +195,7 @@
     });
 });
     
-</script>
-
-
+</script> -->
 
 </body>
 </html>

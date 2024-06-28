@@ -1,5 +1,6 @@
 <?php
 require_once('db.php');
+session_start();
 
 $login = $_POST['login'];
 $pass = $_POST['pass'];
@@ -16,7 +17,11 @@ if (empty($login) || empty($pass) || empty($repeatpass) || empty($email)) {
         $stmt->bind_param("sss", $login, $pass, $email);
 
         if ($stmt->execute()) {
-            header("Location: welcome.php"); // на welcome.php після успішної реєстрації
+            $_SESSION['user'] = [
+                'login' => $login,
+                'email' => $email
+            ];
+            header("Location: welcome.php");
             exit();
         } else {
             echo "Помилка реєстрації: " . $stmt->error;

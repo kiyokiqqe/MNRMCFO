@@ -138,11 +138,16 @@ body {
 
 /* кнопки в заголовку */
 
+
+.header-button:hover {
+    background-color: #4c1659; 
+}
+
 .header-button {
     position: absolute;
     background-color: #732090;
     margin-top: 10px;
-    margin-left: -40px;
+    margin-left: -80px;
     padding: 12px 25px;
     color: #fff;
     font-size: 12px;
@@ -155,4 +160,3 @@ body {
 .header-button:hover {
     background-color: #4c1659; 
 }
-
