@@ -26,7 +26,6 @@
                 <a class='nav-item' href="">Відділення</a>
                 <a class='nav-item' href="">Послуги</a>
                 <a class='nav-item' href="">Оплата</a>
-                <a class='nav-item' href="">Питання</a>
                 <a class='nav-item' href="">Про нас</a>
             </div>
 

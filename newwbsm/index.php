@@ -34,8 +34,7 @@ if (isset($_SESSION['user'])) {
                 <a class='nav-item' href="">Головна</a>
                 <a class='nav-item' href="">Відділення</a>
                 <a class='nav-item' href="">Послуги</a>
-                <a class='nav-item' href="">Оплата</a>
-                <a class='nav-item' href="">Питання</a>
+                <!-- <a class='nav-item' href="">Оплата</a> -->
                 <a class='nav-item' href="">Про нас</a>
             </div>
 
@@ -161,41 +160,6 @@ if (isset($_SESSION['user'])) {
     </div>
 </div>
 
-<!-- <form id="registerForm" class="history-form" action="register.php" method="post">
-        <input type="text" placeholder="login" name="login">
-        <input type="text" placeholder="password" name="pass">
-        <input type="text" placeholder="repeat password" name="repeatpass">
-        <input type="text" placeholder="email" name="email">
-        <button type="submit">Реєстрація</button>
-</form>
-
-<form id="loginForm" class="history-form" action="login.php" method="post">
-        <input type="text" placeholder="login" name="login">
-        <input type="text" placeholder="password" name="pass">
-        <button type="submit">Вхід</button>
-
-</form> -->
-    
-<!-- <script>
-
-    $(document).ready(function(){
-    // приховати форми при завантаженні ст
-    $('.history-form').hide();
-
-    //перевірка події кліку на кнопці "Увійти"
-    $('#header-button-pos').click(function(){
-        //чи вже видима форма
-        if($('.history-form').is(':visible')){
-            //так, то приховати її
-            $('.history-form').hide();
-        } else {
-            // ні то показати форму
-            $('.history-form').show();
-        }
-    });
-});
-    
-</script> -->
 
 </body>
 </html>

@@ -15,8 +15,8 @@
         <div class="site-name">МЗ - Admin</div>
         <nav class="nav-buttons">
             <button onclick="goToInstagramProfile()">^_^</button>
-            <button>Чати</button>
-            <button>Допомога</button>
+           
+           
         </nav>
     </header>
 </body>
